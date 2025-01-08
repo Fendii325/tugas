@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Landing Page Kota Ponorogo</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link ke Google Fonts untuk font yang lebih menarik -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link ke Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    /* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-image: url('pono.jpg'); /* Ganti dengan gambar kota Ponorogo */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Section Styles */
+.info-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2em;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #4CAF50;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .social-icons a {
+        font-size: 1.5em;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>Selamat Datang di Ponorogo!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#places">Tempat Wisata</a></li>
+                    <li><a href="#culture">Budaya</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="info-section">
+        <div class="container">
+            <h2>Tentang Ponorogo</h2>
+            <p>Ponorogo adalah sebuah kota di Jawa Timur yang terkenal dengan budaya Reog Ponorogo yang megah dan menjadi kebanggaan masyarakat lokal. Kota ini juga kaya akan alam yang indah dan keanekaragaman budaya yang unik.</p>
+        </div>
+    </section>
+
+    <section id="places" class="info-section">
+        <div class="container">
+            <h2>Tempat Wisata</h2>
+            <p>Ponorogo memiliki berbagai tempat wisata menarik seperti Taman Wisata Puncak Becici, Pantai Taman, dan keindahan alam Gunung Bromo yang terletak tidak jauh dari kota ini.</p>
+        </div>
+    </section>
+
+    <section id="culture" class="info-section">
+        <div class="container">
+            <h2>Budaya Ponorogo</h2>
+            <p>Ponorogo terkenal dengan seni pertunjukan Reog Ponorogo, sebuah tarian tradisional yang melibatkan topeng raksasa. Selain itu, kota ini juga memiliki kerajinan batik khas yang mencerminkan kekayaan budaya lokal.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="info-section">
+        <div class="container">
+            <h2>Kontak</h2>
+            <p>Hubungi kami di email: info@ponorogo.id</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ponorogo Tourism</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

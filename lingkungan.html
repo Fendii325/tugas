@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selamatkan Lingkungan Hidup</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link ke Google Fonts untuk font yang lebih menarik -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link ke Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    /* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #00bfae, #00796b);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Info Section */
+.info-section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Tips Cards */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    width: 22%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 3em;
+    color: #00796b;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+}
+
+/* Issue Cards */
+.issue-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.issue-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.issue-card i {
+    font-size: 3em;
+    color: #00bfae;
+    margin-bottom: 15px;
+}
+
+.issue-card h3 {
+    font-size: 1.5em;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+.issue-card p {
+    font-size: 1em;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2em;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00bfae;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .issue-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .issue-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .social-icons a {
+        font-size: 1.5em;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>Selamatkan Lingkungan Hidup!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#tips">Tips</a></li>
+                    <li><a href="#issues">Isu Lingkungan</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="info-section">
+        <div class="container">
+            <h2>Tentang Lingkungan Hidup</h2>
+            <p>Lingkungan hidup adalah tempat kita hidup bersama, tempat kita bergantung pada alam. Untuk itu, sangat penting bagi kita menjaga kelestarian alam agar kehidupan kita tetap seimbang, dan bumi tetap lestari.</p>
+        </div>
+    </section>
+
+    <section id="tips" class="info-section">
+        <div class="container">
+            <h2>Tips Menjaga Lingkungan</h2>
+            <div class="card-container">
+                <div class="card">
+                    <i class="fas fa-recycle"></i>
+                    <h3>Kurangi Plastik</h3>
+                    <p>Gunakan produk yang ramah lingkungan dan kurangi sampah plastik yang sulit terurai.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-tree"></i>
+                    <h3>Tanam Pohon</h3>
+                    <p>Menanam pohon membantu meningkatkan kualitas udara dan menjaga ekosistem.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-bicycle"></i>
+                    <h3>Hemat Energi</h3>
+                    <p>Kurangi penggunaan kendaraan pribadi dan lebih memilih transportasi umum atau bersepeda.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-water"></i>
+                    <h3>Hemat Air</h3>
+                    <p>Jaga sumber daya air dengan menggunakan air secara efisien di kehidupan sehari-hari.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="issues" class="info-section">
+        <div class="container">
+            <h2>Isu Lingkungan Saat Ini</h2>
+            <div class="issue-cards">
+                <div class="issue-card">
+                    <i class="fas fa-sun"></i>
+                    <h3>Perubahan Iklim</h3>
+                    <p>Perubahan iklim global berdampak pada pola cuaca, naiknya permukaan air laut, dan kerusakan ekosistem.</p>
+                </div>
+                <div class="issue-card">
+                    <i class="fas fa-tree"></i>
+                    <h3>Penggundulan Hutan</h3>
+                    <p>Penggundulan hutan menyebabkan hilangnya habitat satwa liar serta mengancam keseimbangan alam.</p>
+                </div>
+                <div class="issue-card">
+                    <i class="fas fa-water"></i>
+                    <h3>Pencemaran Air</h3>
+                    <p>Pencemaran air mengancam kualitas air bersih yang kita butuhkan untuk hidup sehari-hari.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="info-section">
+        <div class="container">
+            <h2>Kontak</h2>
+            <p>Hubungi kami untuk informasi lebih lanjut tentang program pelestarian lingkungan melalui email: info@saveourplanet.id</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Save Our Planet</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
